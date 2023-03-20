@@ -5,8 +5,8 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
   chart = Plot.plot({
     marks: [
       Plot.dot(data, {
-        x: "edad_mision",
-        y: "anio_nacimiento",
+        x: "anio_nacimiento",
+        y: "edad_mision",
         r: "mision_hs",
         fill: "ocupacion",
         opacity: 0.5,
