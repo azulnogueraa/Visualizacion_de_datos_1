@@ -31,6 +31,7 @@ function createChart(yearSelected) {
     line: true,
     nice: true,
     zero: true,
+    title: 'Edad de los astronautas en función de la duración de la misión',
     r: {range: [3,15]},
     marks: [
       Plot.dot(dataFilter, {
