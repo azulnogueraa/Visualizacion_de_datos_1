@@ -7,7 +7,7 @@
  * */
 
 function addTooltips(chart, styles) {
-    const stroke_styles = { stroke: "#A09A99", "stroke-width": 3 };
+    const stroke_styles = { stroke: "blue", "stroke-width": 3 };
     const fill_styles = { fill: "blue", opacity: 0.5 };
   
     // Workaround if it's in a figure
