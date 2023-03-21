@@ -27,6 +27,8 @@ function changeValueInput(value) {
 function createChart(yearSelected) {
   let dataFilter = data.filter(d => d.anio_mision == yearSelected)
   chart = Plot.plot({
+    witdh:100,
+    height: 700
     grid: true,
     line: true,
     nice: true,
@@ -45,6 +47,7 @@ function createChart(yearSelected) {
         title: 'nombre',
       }),
     ],
+
     color: {
       legend: true,
       className: 'legend-clusters',
@@ -55,6 +58,7 @@ function createChart(yearSelected) {
     y: {
       domain: valuesDomainY,
     },
+    
   })
 
   /* Agrega un título a la leyenda x d3 */
