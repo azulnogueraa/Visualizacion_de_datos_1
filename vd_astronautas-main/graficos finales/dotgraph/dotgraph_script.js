@@ -28,14 +28,12 @@ function createChart(yearSelected) {
   let dataFilter = data.filter(d => d.anio_mision == yearSelected)
   chart = Plot.plot({
     witdh:100,
-    height: 700
+    height: 300,
     grid: true,
     line: true,
     nice: true,
     zero: true,
-    title: `Edad de los astronautas en función de la duración de la misión (${yearSelected})`,
     r: {range: [3,15]},
-    title: 'Edad de los astronautas en función de la duración de la misión',
     r: {range: [3,15]},
     marks: [
       Plot.dot(dataFilter, {
@@ -50,6 +48,7 @@ function createChart(yearSelected) {
 
     color: {
       legend: true,
+      range: ["#3399ff", "#ff0066", "#9933ff", "#ccff33"],
       className: 'legend-clusters',
     },
     x: {
