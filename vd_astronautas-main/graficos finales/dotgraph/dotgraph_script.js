@@ -1,8 +1,8 @@
+import addTooltips from "./dotgraph_add_tooltip.js";
 let chart
 let data
 let valuesDomainX
 let valuesDomainY
-
 let selectElement = d3.select('#input')
 selectElement.on('input', event => {
   let yearSelected = event.target.value
@@ -27,14 +27,13 @@ function changeValueInput(value) {
 function createChart(yearSelected) {
   let dataFilter = data.filter(d => d.anio_mision == yearSelected)
   chart = Plot.plot({
-    witdh:100,
+    width:700,
     height: 300,
     grid: true,
     line: true,
     nice: true,
     zero: true,
-    r: {range: [3,15]},
-    r: {range: [3,15]},
+    r: {range: [5,15]},
     marks: [
       Plot.dot(dataFilter, {
         x: 'mision_hs',
@@ -70,4 +69,5 @@ function createChart(yearSelected) {
 
   d3.select('#chart figure').remove()
   d3.select('#chart').append(() => chart)
+  addTooltips(chart);
 }
