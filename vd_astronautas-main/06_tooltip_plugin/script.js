@@ -5,6 +5,7 @@ d3.csv("astronautas.csv", d3.autoType).then((data) => {
     grid: true,
     line: true,
     nice: true,
+    title: 'Edad de los astronautas en función de la duración de la misión',
     marks: [
       Plot.dot(data, {
         x: "mision_hs",
