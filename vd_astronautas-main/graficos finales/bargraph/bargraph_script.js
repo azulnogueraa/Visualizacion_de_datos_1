@@ -5,7 +5,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     nice:true,
     zero:true,
     grid:true,
-    color: { Range:['pink', 'blue']},
+    color: { range:['pink', 'blue']},
     marks: [
       Plot.barY(data, {
         x: 'nacionalidad',
