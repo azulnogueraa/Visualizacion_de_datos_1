@@ -1,6 +1,5 @@
 d3.csv('astronautas.csv', d3.autoType).then(data => {
 
-  console.log(data)
   data2 = {}
 
   data.forEach(ast => {
@@ -40,7 +39,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         fill: 'genero',
         sort: 'genero',
         r: 5,
-        title: d => d.nacionalidad + '\n' + d.mision_hs,
+        title: d => d.mision_hs + '\n' + d.nacionalidad,
 
       }),
     ],
@@ -52,34 +51,33 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     },
 
     x: {
-      label: 'Nacionalidad',
-      labelOffset: 50,
+      label: '               Horas de Misión',
+      labelOffset: 30,
       fontSize: 15,
+      labelAnchor: 'right',
     },
 
     y: {
-      label: 'Misiones por hora',
+      label: 'Nacionalidad',
       labelOffset: 50,
       labelAnchor: 'top',
     },
 
     style: {
-      fontFamily: 'Roboto',
-      fontSize:6,
+      fontFamily: 'verdana',
+      fontSize:12,
     },
     
     marginLeft: 100,
-    //width: 10000,
-    //height:400,
+    width: 1200,
+    height:700,
     },
 
-  
-  
   
   )
   d3.select('#chart').append(() => chart)
 
-  fig = document.querySelector("figure")
+  var fig = document.querySelector("figure")
   fig.childNodes[0].querySelectorAll("svg").forEach(s => {
     s.style.borderRadius = "50%";
   })
