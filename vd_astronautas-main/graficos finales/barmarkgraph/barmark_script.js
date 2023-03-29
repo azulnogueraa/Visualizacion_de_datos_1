@@ -14,20 +14,19 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       ],
       y: {
         labelAnchor: 'top',
-
       },
       x: {
-        label: 'Min of edad_mision, Max of edad_mision',
+        label: 'min edad, max edad',
         labelAnchor: 'right',
         tickSize: 5,
       },
       style: {
         fontSize: 20,
       },
-      height: 500,
-      width: 1200,
-      marginLeft: 200,
-      marginRight: 200,
+      height: 600,
+      width: 1350,
+      marginLeft: 230,
+      marginRight: 230,
       grid: true,
       nice: true,
       line: true,
