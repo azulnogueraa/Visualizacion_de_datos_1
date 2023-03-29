@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chart 12 - Bar Mark A</title>
+    <title>Bar Graph</title>
+
+    <h4> Bar Graph </h4>
+    <p>
+      Este es un gráfico de barras en el que se muestra el número de misiones espaciales 
+      completadas por hora para astronautas de diferentes nacionalidades, separados por género. 
+      La variable X representa la nacionalidad de los astronautas y la variable Y representa el 
+      número de misiones completadas por hora. Cada barra representa una combinación única de 
+      nacionalidad y género.
+    </p>
     <style>
       #chart {
         overflow-y: auto;
+        color: white;
+        background-color:black;
+        align-items: center;
+        margin: auto;
       }
+      
       #chart svg {
         max-width: initial;
+        color: white;
+        background-color:black;
+        margin: auto;
+      }
+
+      
+      h4 {
+        color: rgb(255, 255, 255); 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin: auto;
+      }
+
+      p{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: auto;
+        font-size:xx-small;
+        padding: 0 50px;
+        margin: auto;
+      }
+
+      body{
+        background-color: black;
       }
     </style>
+   
+
   </head>
+
   <body>
     
     <div id="chart"></div>
-
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
     <script src="bargraph_script.js"></script>
+
+  
   </body>
-</html>
+
+  </html>
