@@ -9,7 +9,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             Plot.barY(dataUS, {
                 x: 'ocupacion',
                 y: 'mision_hs',
-                fill: 'black',
+                fill: 'white',
                 fillOpacity: 0.2,
                 }),
             Plot.barY(dataFiltered, {
@@ -17,7 +17,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
                 y: 'mision_hs',
                 fill: 'ocupacion',
                 fillOpacity: 1,
-                title: 'nacionalidad',
+                title: 'nombre',
               }),
               Plot.frame(),
             ],
@@ -26,6 +26,8 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             nice: true,
             width: 1350,
             height: 400,
+            marginLeft: 55,
+            marginRight: 55,
             facet: {
               data: dataFiltered,
               x: 'nacionalidad',
