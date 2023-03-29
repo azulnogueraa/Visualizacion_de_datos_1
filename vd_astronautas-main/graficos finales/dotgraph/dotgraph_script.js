@@ -15,7 +15,6 @@ d3.csv('astronautas.csv', d3.autoType).then(dataChart => {
   let initYear = selectElement.attr('value')
   valuesDomainX = [d3.min(data, d => d.mision_hs), d3.max(data, d => d.mision_hs)]
   valuesDomainY = [d3.min(data, d => d.edad_mision), d3.max(data, d => d.edad_mision)]
-  console.log(valuesDomainY)
   changeValueInput(initYear)
   createChart(initYear)
 })
@@ -29,28 +28,27 @@ function createChart(yearSelected) {
   let dataFilter = data.filter(d => d.anio_mision == yearSelected)
   chart = Plot.plot({
     width:700,
-    height: 300,
+    height: 250,
     grid: true,
     line: true,
     nice: true,
-    //zero: true,
     r: {range: [5,15]},
     x: {
       domain: valuesDomainX,
+      label: 'Horas de Misión'
     },
     y: {
       domain: valuesDomainY,
+      label: 'Edad de Astronauta'
     },
-
+    
 
     marks: [
       Plot.dot(dataFilter, {
         x: 'mision_hs',
         y: 'edad_mision',
         fill: 'ocupacion',
-        //fillOpacity: 0.6,
-        //r: 'eva_mision_hs',
-        title: 'nombre',
+        title: 'nombre',  
       }),
     ],
 
@@ -59,6 +57,10 @@ function createChart(yearSelected) {
       range: ["#3399ff", "#ff0066", "#9933ff", "#ccff33"],
       className: 'legend-clusters',
     },
+
+
+
+
     
   })
 
@@ -67,10 +69,24 @@ function createChart(yearSelected) {
     .select('.legend-clusters')
     .insert('h4', 'span')
     .attr('class', 'legend-title')
-    .text('Grupos de países: ')
+    .text('Ocupaciones: ')
     .classed('legend-title')
 
   d3.select('#chart figure').remove()
   d3.select('#chart').append(() => chart)
   addTooltips(chart);
+
+  var fig = document.querySelector("figure")
+  fig.childNodes[0].querySelectorAll("svg").forEach(s => {
+    s.style.borderRadius = "50%";
+  })
+  fig.childNodes[0].querySelectorAll("span").forEach(s => {
+    s.style.gap = "10px";
+  })
+  fig.childNodes[0].style.display = "flex";
+  fig.childNodes[0].style.alignItems = "center";
+  fig.childNodes[0].style.justifyContent = "center";
+
 }
+
+
