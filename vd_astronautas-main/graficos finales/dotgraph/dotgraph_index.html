@@ -8,16 +8,14 @@
     <link rel = "stylesheet" href = "dotgraph.css">
 
 
-    <h1 style="color: rgb(255, 255, 255);" font-family:  >Dot Graph</h1>
-
-
-
-
+    <h4>Dot Graph</h4>
+    
 
     <style>
         body{
         background-color: black;
       }  
+
       #chart {
         overflow-y: auto;
         color: white;
@@ -26,31 +24,63 @@
         max-width: initial;
         color: white;
         background-color:black;
+        margin: 0%;
       }
       #input {
-        width: 250px;
-        color: white;
+        width: 300px;
+        color: rgb(255, 255, 255);
+        scroll-behavior:smooth;
       }
       #selector {
-        display: flex;
+        display:flex;
         color: white;
-        
+        margin: 0%;
+        margin-left: 50px;
       }
       #selector p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
-        color: white;
+        color: rgb(255, 255, 255);
         text-align: center;
       }
+
+
       .legend-title {
         margin-right: 10px; 
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
 
+      h4{
+        color: rgb(255, 255, 255); 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin: 0%;
+      }
+
+      p{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* text-align:center; */
+        font-size:xx-small;
+        margin-left: 70px;
+        margin-right: 70px;
+      }
+.legend-clusters-swatch svg {
+  padding: 0 10px;
+}
     </style>
   </head>
   <body>
+    
+    <p>
+      Este es un gráfico de dispersión que muestra la relación entre dos variables, 
+    la duración de la misión espacial (en horas) y la edad de los astronautas durante 
+    la misión. Cada punto en el gráfico representa un astronauta y su posición en el 
+    gráfico está determinada por su edad en el eje Y y la duración de la misión en el 
+    eje X. Además, el color del punto está codificado por la ocupación del astronauta 
+    durante la misión.
+    </p>
 
     <div id="chart">
 
@@ -66,6 +96,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
     <script type="module" src="dotgraph_script.js"></script>
+
+
   </body>
 </html>
 
