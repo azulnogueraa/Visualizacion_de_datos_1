@@ -8,14 +8,46 @@
     <style>
       #chart{
         overflow-y:hidden;
+        margin: auto;
+        color: white;
+        background-color: black;
+        font-size: 12px;
       }
       #chart svg{
         max-width: initial;
+        margin: auto;
+        color: rgb(198, 196, 196);
+        background-color: black;
+      }
+      h3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: justify;
+        margin: auto;
+        padding: 0 50px;
+      }
+      body{
+        background-color: black;
+        margin: auto;
       }
     </style>
   </head>
   <body>
+    <h3>Horas de mision por ocupacion</h3>
+    <p>Este grafico muestra la acumulación de horas de misión por cada ocupación. Se superpone sobre todas las facetas el gráfico de Estados Unidos para poder dimensionar la diferencia de horas en relacion al resto de los paises.</p>
+
     <div id="chart"></div>
+
+    
+
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
