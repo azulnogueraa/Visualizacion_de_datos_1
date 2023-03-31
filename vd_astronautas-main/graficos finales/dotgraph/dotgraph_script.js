@@ -27,8 +27,8 @@ function changeValueInput(value) {
 function createChart(yearSelected) {
   let dataFilter = data.filter(d => d.anio_mision == yearSelected)
   chart = Plot.plot({
-    width:700,
-    height: 250,
+    width: 1200,
+    height: 600,
     grid: true,
     line: true,
     nice: true,
@@ -58,9 +58,6 @@ function createChart(yearSelected) {
       className: 'legend-clusters',
     },
 
-
-
-
     
   })
 
@@ -75,6 +72,7 @@ function createChart(yearSelected) {
   d3.select('#chart figure').remove()
   d3.select('#chart').append(() => chart)
   addTooltips(chart);
+
 
   var fig = document.querySelector("figure")
   fig.childNodes[0].querySelectorAll("svg").forEach(s => {
