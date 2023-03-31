@@ -2,7 +2,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
   
     const colorScale = d3.scaleOrdinal()
     .domain(["masculino", "femenino"])
-    .range(["#3333FF", "#CC0099"]);
+    .range(["#0000FF", "#FF00FF"]);
 
     let chart = Plot.plot({
         marks: [
@@ -15,20 +15,20 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             })),
             Plot.ruleY([0])
         ],
-        width: 700,
-        height: 150,
+        width: 500,
+        height: 200,
         x: {
         label: "Edad →",
         nice: true,
         labelAnchor: 'right',
         labelOffset: 30,
         tickSize: 0,
-        ticks: 10
+        ticks: 5,
         },
         y: {
         grid: true,
         nice: true,
-        label: "← Women · Men →",
+        label: "← Femenino · Masculino →",
         labelAnchor: "center",
         tickFormat: Math.abs,
         tickSize: 0,
