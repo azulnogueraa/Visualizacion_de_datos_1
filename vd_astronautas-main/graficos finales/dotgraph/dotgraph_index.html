@@ -48,7 +48,7 @@
 
 
       .legend-title {
-        margin-right: 10px; 
+        /* margin-right: 10px;  */
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin: auto;
       }
@@ -65,15 +65,20 @@
       p{
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        /* text-align:center; */
-        font-size:xx-small;
+        text-align:center;
+        font-size:x-small;
         padding: 0 50px;
         margin: auto;
       }
- 
-      .legend-clusters-swatch svg { 
+      
+      .listado{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        text-align:center; 
+        font-size: xx-small;
+        padding: 5px 50px;
         margin: auto;
-      } 
+      }
 
     </style>
   </head>
@@ -82,11 +87,18 @@
     <p>
       Este es un gráfico de dispersión que muestra la relación entre dos variables, 
     la duración de la misión espacial (en horas) y la edad de los astronautas durante 
-    la misión. Cada punto en el gráfico representa un astronauta y su posición en el 
-    gráfico está determinada por su edad en el eje Y y la duración de la misión en el 
-    eje X. Además, el color del punto está codificado por la ocupación del astronauta 
-    durante la misión.
+    la misión. 
     </p>
+    <div class="listado">
+      <ul>
+        <li> Y = Edad </li>
+        <li> X = Duración de la misión </li>
+        <li> Cada punto representa 1 astronauta</li>
+        <li> Color = ocupación de cada astronauta en la misión </li>
+        
+      </ul>
+    </div>
+    
 
     <div id="chart">
 
