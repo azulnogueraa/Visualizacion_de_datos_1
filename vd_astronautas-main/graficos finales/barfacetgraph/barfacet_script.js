@@ -32,6 +32,8 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             facet: {
               data: dataFiltered,
               x: 'nacionalidad',
+              label: "Nacionalidad",
+              labelAnchor: "center",
             },
         
             color: {
@@ -41,7 +43,11 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             },
         
             x: {axis: null},
-            y: {grid: true},
+            y: {
+              grid: true,
+              label: "Horas de Mision",
+              labelAnchor: "top",
+            },
             
           })
           d3.select('#chart').append(() => chart)
