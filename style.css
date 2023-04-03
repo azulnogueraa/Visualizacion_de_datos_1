@@ -1,8 +1,17 @@
+body{
+    background-color: #060a10;
+  }
+
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f5f5f5;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
 .header .logo {
@@ -71,3 +80,42 @@ margin-left: 30px;
     cursor: pointer;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
   }
+
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    border-top: 2px solid #eeeeee;
+  }
+  
+  .about-me img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .about-me-text h2 {
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .about-me-text p {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+  }
+
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #302f49;
+    padding: 40px 80px;
+  }
+  
