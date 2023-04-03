@@ -18,6 +18,7 @@
         align-items: center;
         flex-direction: row;
         justify-items: center;
+        padding: 50px 0px;
         
       }
       #chart svg {
@@ -32,22 +33,42 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
         margin: auto;
+        padding: 10px 0px;
       }
 
       p{
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        /* text-align:center; */
-        font-size:xx-small;
-        padding: 0 50px;
+        text-align:center; 
+        font-size: x-small;
+        padding: 10px 50px;
         margin: auto;
       }
+
+      ul{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align:center;
+        font-size: xx-small;
+        padding: 10px 50px;
+        margin: auto;
+      }
+
+      
 
     </style>
   </head>
   <body>
 
-    <p></p>
+    <p> Gráfico de puntos que muestra la edad en que los astronautas 
+      realizaron sus misiones, diferenciados por género (masculino o femenino). 
+    </p>
+    <ul>
+      <li> Y = Cantidad de astronautas </li>
+      <li> X = Edad de astronautas </li>
+      <li> Color = Genero </li>
+      <li> Cada punto representa un astronauta </li>
+    </ul>
 
     <div id="chart"></div>
 
