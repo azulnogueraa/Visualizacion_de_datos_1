@@ -13,6 +13,10 @@ text-decoration: none;
 margin-left: 30px;
 }
 
+.header img {
+    width: 35px;
+}
+
 .nav-items {
     display: flex;
     justify-content: space-around;
@@ -21,6 +25,49 @@ margin-left: 30px;
     margin-right: 20px;
   }
 
-.header img {
-    width: 35px;
-}
+  .nav-items a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 5px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://img.freepik.com/foto-gratis/hermosas-estrellas-brillantes-cielo-nocturno_181624-622.jpg?w=2000&t=st=1680564216~exp=1680564816~hmac=048786e9b6d9630967d8755851bc9d7a2d576dd81ad8f7cf6f166e518e5d9679");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .intro h1 {
+    font-family: sans-serif;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .intro p {
+    font-size: 15px;
+    color: #d1d1d1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0;
+  }
+
+  .intro button {
+    background-color: #5edaf0;
+    color: #000;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+  }
