@@ -20,12 +20,13 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
                 title: 'nombre',
               }),
               Plot.frame(),
+              
             ],
         
             grid: true,
             nice: true,
-            width: 1350,
-            height: 400,
+            width: 1200,
+            height: 500,
             marginLeft: 55,
             marginRight: 55,
             facet: {
@@ -34,14 +35,28 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             },
         
             color: {
-                legend: true,
-                className: 'legend-clusters',
-              },
+              legend: true,
+              range: ["#ccff33", "#ff0066", "#9933ff", "#3399ff"],
+              className: 'legend-clusters',
+            },
         
             x: {axis: null},
             y: {grid: true},
             
           })
           d3.select('#chart').append(() => chart)
+
+          var fig = document.querySelector("figure")
+  fig.childNodes[0].querySelectorAll("svg").forEach(s => {
+    s.style.borderRadius = "50%";
+  })
+  fig.childNodes[0].querySelectorAll("span").forEach(s => {
+    s.style.gap = "10px";
+  })
+  fig.childNodes[0].style.display = "flex";
+  fig.childNodes[0].style.alignItems = "center";
+  fig.childNodes[0].style.justifyContent = "center";
+
         })
+        
         
