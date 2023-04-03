@@ -16,8 +16,8 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             Plot.ruleY([0])
         ],
 
-        width: 1200,
-        height: 600,
+        width: 1100,
+        height: 500,
 
         x: {
         label: "Edad →",
