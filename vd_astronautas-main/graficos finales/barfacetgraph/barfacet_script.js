@@ -29,6 +29,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             height: 600,
             marginLeft: 55,
             marginRight: 55,
+            
             facet: {
               data: dataFiltered,
               x: 'nacionalidad',
