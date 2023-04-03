@@ -27,8 +27,8 @@ function changeValueInput(value) {
 function createChart(yearSelected) {
   let dataFilter = data.filter(d => d.anio_mision == yearSelected)
   chart = Plot.plot({
-    width: 1200,
-    height: 600,
+    width: 1100,
+    height: 500,
     grid: true,
     line: true,
     nice: true,
