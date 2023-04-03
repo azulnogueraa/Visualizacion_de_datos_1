@@ -10,7 +10,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
                 Plot.stackY2({
                 x: 'edad_mision',
                 y: d => d.genero === "masculino" ? 1 : d.genero === "femenino" ? -1 : 0,
-                fill: d => colorScale(d.genero),
+                fill: 'genero',
                 size: 10,
             })),
             Plot.ruleY([0])
@@ -38,22 +38,21 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         ticks: 10,
         },
 
-        // color: {
-        //     range: ['#f97db0', '#4f96ff'],
-        //     legend: true,
-        // },
-
+        color: {
+            range: ['#f97db0', '#4f96ff'],
+            legend: true,
+        },
     })
     d3.select('#chart').append(() => chart)
 
-    // var fig = document.querySelector("figure")
-    // fig.childNodes[0].querySelectorAll("svg").forEach(s => {
-    //     s.style.borderRadius = "50%";
-    // })
-    // fig.childNodes[0].querySelectorAll("span").forEach(s => {
-    //     s.style.gap = "10px";
-    // })
-    // fig.childNodes[0].style.display = "flex";
-    // fig.childNodes[0].style.alignItems = "center";
-    // fig.childNodes[0].style.justifyContent = "center";
+    var fig = document.querySelector("figure")
+    fig.childNodes[0].querySelectorAll("svg").forEach(s => {
+        s.style.borderRadius = "50%";
+    })
+    fig.childNodes[0].querySelectorAll("span").forEach(s => {
+        s.style.gap = "10px";
+    })
+    fig.childNodes[0].style.display = "flex";
+    fig.childNodes[0].style.alignItems = "center";
+    fig.childNodes[0].style.justifyContent = "center";
   })
