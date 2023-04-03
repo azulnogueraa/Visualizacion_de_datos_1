@@ -26,7 +26,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             grid: true,
             nice: true,
             width: 1200,
-            height: 500,
+            height: 600,
             marginLeft: 55,
             marginRight: 55,
             facet: {
