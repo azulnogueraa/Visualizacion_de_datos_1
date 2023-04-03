@@ -12,14 +12,16 @@
         color: white;
         background-color: black;
         font-size: 12px;
+        padding: 10px 0px;
       }
+      
       #chart svg{
         max-width: initial;
         margin: auto;
         color: rgb(198, 196, 196);
         background-color: black;
       }
-      h3{
+      h4{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
         text-align: center;
@@ -30,9 +32,19 @@
       p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
-        text-align: justify;
+        text-align: center;
+        font-size: x-small;
         margin: auto;
-        padding: 0 50px;
+        padding: 10px 50px;
+      }
+
+      ul {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: center;
+        font-size: xx-small;
+        margin: auto;
+        padding: 10px 50px;
       }
       body{
         background-color: black;
@@ -41,8 +53,19 @@
     </style>
   </head>
   <body>
-    <h3>Horas de mision por ocupacion</h3>
-    <p>Este grafico muestra la acumulación de horas de misión por cada ocupación. Se superpone sobre todas las facetas el gráfico de Estados Unidos para poder dimensionar la diferencia de horas en relacion al resto de los paises.</p>
+    <h4>Horas de Misión por Ocupación</h4>
+    <p>Este grafico muestra la acumulación de horas de misión por 
+      cada ocupación. Se superpone sobre todas las facetas el gráfico 
+      de Estados Unidos para poder dimensionar la diferencia de horas 
+      en relacion al resto de los paises.
+    </p>
+
+    <ul>
+      <li>Y = Horas de misión </li>
+      <li> X = Ocupación</li>
+      <li> Color = Ocupación </li>
+      <li> Cada nacionalidad es representada por separado a las demás</li>
+    </ul>
 
     <div id="chart"></div>
 
