@@ -123,7 +123,8 @@ function addTooltips(chart, styles) {
       .style("dominant-baseline", "ideographic")
       .text((d) => d)
       .attr("y", (d, i) => (i - (text.length - 1)) * 15 - vertical_offset)
-      .style("font-weight", (d, i) => (i === 0 ? "bold" : "normal"));
+      .style("font-weight", (d, i) => (i === 0 ? "bold" : "normal"))
+      .style("fill", (d, i) => (i === 0 ? "black" : "black"));
   
     const bbox = tip.node().getBBox();
   
