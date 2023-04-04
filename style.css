@@ -15,138 +15,134 @@ body{
   }
 
 .header .logo {
-font-size: 15px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: #000;
-text-decoration: none;
-margin-left: 30px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
 }
 
 .github {
-    width: 35px;
+  width: 35px;
 }
 
-.github:hover {
-    border-color: #5edaf0;
-} 
-
 .nav-items {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f5f5f5;
-    margin-right: 20px;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
 
 .nav-items a {
-text-decoration: none;
-color: #000;
-padding: 2px 5px;
+  text-decoration: none;
+  color: #000;
+  padding: 2px 5px;
 }
 
 .intro {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 520px;
-background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("material/cielo_estrellado.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("material/cielo_estrellado.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .intro h1 {
-font-family: sans-serif;
-font-size: 60px;
-color: #fff;
-font-weight: bold;
-text-transform: uppercase;
-margin: 0;
+  font-family: sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .intro p {
-font-size: 15px;
-color: #d1d1d1;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-margin: 20px 0;
+  font-size: 15px;
+  color: #d1d1d1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px 0;
 }
 
 .intro button {
-background-color: #5edaf0;
-color: #000;
-padding: 10px 25px;
-border: none;
-border-radius: 5px;
-font-size: 20px;
-font-weight: bold;
-cursor: pointer;
-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
 }
 
 
 .bargraph, .dotgraph, .barfacetgraph, .agedotgraph {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 40px 80px;
-border-top: 2px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
 }
 
 .agedotgraph {
-    border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 
 
 .bargraph img, .dotgraph img, .barfacetgraph img, .agedotgraph img {
-width: 500px;
-max-width: 100%;
-height: auto;
-border-radius: 10px;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .clickbait {
-font-size: 30px;
-color: white;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-margin: 0;
+  font-size: 30px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
 }
 
 .descripcion {
-font-size: 15px;
-color: white;
-margin: 10px 0;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-padding-right: 10px;
-padding: 10px 10px  10px 0px;
+  font-size: 15px;
+  color: white;
+  margin: 10px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-right: 10px;
+  padding: 10px 10px  10px 0px;
 }
 
 .blue_button {
-background-color: #5edaf0;
-color: #000;
-padding: 10px 25px;
-border: none;
-border-radius: 5px;
-font-size: 20px;
-font-weight: bold;
-cursor: pointer;
-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
 }
 
 .blue_button:hover {
-    background-color: white;
-    color: black;
-  }
+  background-color: white;
+  color: black;
+}
 
 .blue_button:active {
-    background-color: #bababa;
+  background-color: #bababa;
 }
 
 
 
 .bargraph img, .dotgraph img, .barfacetgraph img, .agedotgraph img {
-    border: 2px solid #eeeeee;
+  border: 2px solid #eeeeee;
 }
 
