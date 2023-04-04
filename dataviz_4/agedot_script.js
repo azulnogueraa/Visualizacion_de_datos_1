@@ -4,6 +4,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     .domain(["masculino", "femenino"])
     .range(["#3399ff", "#ff0066"]);
 
+
     let chart = Plot.plot({
         marks: [
             Plot.dot(data, 
@@ -11,13 +12,14 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
                 x: 'edad_mision',
                 y: d => d.genero === "masculino" ? 1 : d.genero === "femenino" ? -1 : 0,
                 fill: 'genero',
-                size: 10,
+                r: 6,
             })),
             Plot.ruleY([0])
         ],
 
         width: 1100,
         height: 500,
+
 
         x: {
         label: "Edad →",
