@@ -1,5 +1,5 @@
 body{
-    background-color: #060a10;
+    background-color: #000000;
   }
 
 
@@ -26,9 +26,9 @@ margin-left: 30px;
     width: 35px;
 }
 
-/* .github:hover {
-    background: url("https://cdn-icons-png.flaticon.com/512/2111/2111612.png") no-repeat ;
-} */
+.github:hover {
+    border-color: #5edaf0;
+} 
 
 .nav-items {
     display: flex;
@@ -51,7 +51,7 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 520px;
-background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://img.freepik.com/foto-gratis/hermosas-estrellas-brillantes-cielo-nocturno_181624-622.jpg?w=2000&t=st=1680564216~exp=1680564816~hmac=048786e9b6d9630967d8755851bc9d7a2d576dd81ad8f7cf6f166e518e5d9679");
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("foto%20cielo%20estrellado%20.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -140,7 +140,9 @@ box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
     color: black;
   }
 
-
+.blue_button:active {
+    background-color: #bababa;
+}
 
 
 
