@@ -8,10 +8,10 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #f5f5f5;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
 .header .logo {
@@ -74,7 +74,7 @@ body{
   color: #000;
   padding: 10px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
@@ -100,7 +100,7 @@ body{
   width: 500px;
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .clickbait {
@@ -124,7 +124,7 @@ body{
   color: #000;
   padding: 10px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 29px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
