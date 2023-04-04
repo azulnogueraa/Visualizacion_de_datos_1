@@ -48,7 +48,8 @@ function createChart(yearSelected) {
         x: 'mision_hs',
         y: 'edad_mision',
         fill: 'ocupacion',
-        title: 'nombre',  
+        title: 'nombre', 
+        r: 5
       }),
     ],
 
@@ -60,14 +61,6 @@ function createChart(yearSelected) {
 
     
   })
-
-  /* Agrega un título a la leyenda x d3 */
-  d3.select(chart)
-    .select('.legend-clusters')
-    .insert('h4', 'span')
-    .attr('class', 'legend-title')
-    .text('Ocupaciones: ')
-    .classed('legend-title')
 
   d3.select('#chart figure').remove()
   d3.select('#chart').append(() => chart)
